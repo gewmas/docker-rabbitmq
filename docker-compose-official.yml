@@ -1,0 +1,13 @@
+rabbitmq:
+  image: rabbitmq:management
+  environment:
+    - RABBITMQ_DEFAULT_USER=admin
+    - RABBITMQ_DEFAULT_PASS=password
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+
+# https://hub.docker.com/_/rabbitmq/
+# python send.py
+# python receive.py
+# 127.0.0.1:15672
